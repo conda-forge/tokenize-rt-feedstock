@@ -13,12 +13,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
 
@@ -38,3 +39,4 @@ extra:
   recipe-maintainers:
     - sterlingbaldwin
     - deadsnakes-issues-bot
+    - nicoddemus
