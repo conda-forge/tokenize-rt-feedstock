@@ -1,6 +1,6 @@
 {% set name = "tokenize-rt" %}
-{% set version = "2.0.1" %}
-{% set hash = "3cfa481f51ec1c6a1791964b14e4589c38d8877f2c74e5e50fe3e79dcf5f5bfa" %}
+{% set version = "2.1.0" %}
+{% set hash = "c218980dd483c407aa89683c9dfcee7935fc5efd05e8255a3eabfd8c81bcd437" %}
 
 package:
   name: {{ name }}
@@ -12,13 +12,14 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
 
@@ -38,3 +39,4 @@ extra:
   recipe-maintainers:
     - sterlingbaldwin
     - deadsnakes-issues-bot
+    - nicoddemus
