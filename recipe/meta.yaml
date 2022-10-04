@@ -1,5 +1,5 @@
 {% set name = "tokenize-rt" %}
-{% set version = "4.2.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tokenize_rt-{{ version }}.tar.gz
-  sha256: 0d4f69026fed520f8a1e0103aa36c406ef4661417f20ca643f913e33531b3b94
+  sha256: 3160bc0c3e8491312d0485171dea861fc160a240f5f5766b72a1165408d10740
 
 build:
   noarch: python
