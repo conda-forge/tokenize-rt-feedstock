@@ -1,11 +1,11 @@
-About tokenize-rt
-=================
+About tokenize-rt-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tokenize-rt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/asottile/tokenize-rt
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tokenize-rt-feedstock/blob/main/LICENSE.txt)
 
 Summary: A wrapper around the stdlib `tokenize` which roundtrips.
 
